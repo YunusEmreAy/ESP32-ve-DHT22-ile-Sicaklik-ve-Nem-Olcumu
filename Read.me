@@ -1,0 +1,14 @@
+#include "thingProperties.h" // Bu kütüphane, Arduino Bulut hizmetine bağlanmak için gerekli olan özellikleri ve fonksiyonları içerir.
+#include "DHT.h" // Bu kütüphane DHT sensörü kullanabilmemizi sağlar.
+#include <LiquidCrystal_I2C.h> // I2C arayüzü üzerinden çalışan LCD ekran için kütüphane.
+
+Projenin wokwi.com linki --> https://wokwi.com/projects/395867568432937985
+
+Adım 1-) Yukarıda vermiş olduğum "wokwi.com linki"ni kullanarak simülasyon ortamına giriş yapınız.
+Adım 2-) Sistemi uzaktan kontrol edebilmek için, ARDUINO Cloud platformunu açınız, ve proje "Dashboard"ına giriş yapınız.
+Adım 3-) Ardından, ekranın sağ tarafında bulunan (devrenin bulunduğu kısım) kısımda "yeşil" renkli "Start the simulation" butonuna tıklayarak simülasyonu çalıştırınız.
+Adım 4-) Sağ alt menüde, programımınız terminal ekranı bulunmaktadır. Terminal ekranında, Terminal ekranına yazdığımız yazılzar ve anlık olarak log kayıtları gösterilmektedir.
+Adım 5-) Connected to "Wokwi-GUEST": WiFi'ye başarılı bir şekilde bağlanıldığını belirtir.
+Adım 6-) Connected to Arduino IoT Cloud: Arduino IoT Cloud'a başarılı bir şekilde bağlandığını belirtir. // Artık programımızın çıktılarını Arduino Cloud üzerinden görebilir ve "mesaj" ve "led aç/kapa" bilgisini buradan kontrol edebileceğiz.
+Adım 7-) DHT22 Sensörünün üzerine tıklayarak, simülasyon ortamı için ölçülen sıcaklık ve nem değerlerini manuel olarak değiştirebiliriz. Yaptıpımız değişiklikler hem terminal ekranında hem de Arduino Cloud üzerinde gösterilmektedir.
+Adım 8-)  Bütün bu işlemler olurken LCD ekran üzerinindeki yazı 2 saniyede bir değişmektedir. Sıcaklık ve nem değerleri, bu değerlerin (düşük-yüksek)/(düşük-normal-yüksek) şeklinde karşılıkları ve ayrıca Arduino Cloud ekranında mesaj gönderildiyse, mesaj'ın içeriği LCD ekran üzerinde görüntülenmektedir.
